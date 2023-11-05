@@ -8,7 +8,7 @@ function App() {
 
 
   const handleSubmit = (e) => {
-    if (display == "error") {
+    if (display == "error" || display == "0") {
       setDisplay(e.target.name)
     } else {
       setDisplay(display.concat(e.target.name));
